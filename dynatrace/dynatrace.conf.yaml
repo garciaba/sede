@@ -4,10 +4,11 @@ dashboard: query
 attachRules:
   tagRule:
   - meTypes:
-    - SERVICE
+    - PROCESS_GROUP_INSTANCE
     tags:
-    - context: CONTEXTLESS
-      key: keptn_service
-      value: $SERVICE
-    - context: CONTEXTLESS
-      key: keptn_managed
+    - context: KUBERNETES
+      key: "app.kubernetes.io/name"
+      value: $SERVICE    
+    - context: ENVIRONMENT
+      key: DT_APPLICATION_ENVIRONMENT
+      value: $STAGE
