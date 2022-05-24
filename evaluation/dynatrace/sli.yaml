@@ -1,6 +1,6 @@
 spec_version: 0.1.4
 indicators:
-  host_cpu: metricSelector=builtin:host.cpu.usage:splitBy():avg:names
+  host_cpu: metricSelector=func:slo.synthsede:splitBy():avg:names
   host_disk_queue: metricSelector=builtin:host.disk.queueLength:splitBy():avg:names
   host_mem: metricSelector=builtin:host.mem.usage:splitBy():avg:names
   process_cpu: metricSelector=builtin:tech.generic.cpu.usage:splitBy():avg:names
