@@ -1,6 +1,6 @@
 spec_version: 0.1.4
 indicators:
-  slo_94dbaf92-8567-3a9b-9570-ca0d2b5d291c: ""
+  SEDE: SLO;94dbaf92-8567-3a9b-9570-ca0d2b5d291c
   svc_fr: entitySelector=type(SERVICE),tag("CloudAut_SEDE")&metricSelector=builtin:service.errors.server.rate:splitBy():avg:names
   svc_rt_p50: MV2;MicroSecond;entitySelector=type(SERVICE),tag("CloudAut_SEDE")&metricSelector=builtin:service.response.time:splitBy():median:names
   svc_rt_p90: MV2;MicroSecond;entitySelector=type(SERVICE),tag("CloudAut_SEDE")&metricSelector=builtin:service.response.time:splitBy():percentile(90):names
